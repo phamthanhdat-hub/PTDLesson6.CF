@@ -1,0 +1,74 @@
+﻿@model PtdLesson06.CF.Models.PtdBook
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>PtdBook</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.PtdBookId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PtdBookId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PtdTitle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PtdTitle)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PtdAuthor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PtdAuthor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PtdYear)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PtdYear)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PtdPulisher)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PtdPulisher)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PtdPicture)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PtdPicture)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PtdCategoryId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PtdCategoryId)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.PtdId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

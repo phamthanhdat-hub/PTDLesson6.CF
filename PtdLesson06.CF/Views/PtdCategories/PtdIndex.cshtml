@@ -1,0 +1,33 @@
+﻿@model IEnumerable<PtdLesson06.CF.Models.PtdCategory>
+
+@{
+    ViewBag.Title = "PtdIndex";
+}
+
+<h2>PtdIndex</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.PtdCategoryName)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.PtdCategoryName)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.PtdId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.PtdId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.PtdId })
+        </td>
+    </tr>
+}
+
+</table>
